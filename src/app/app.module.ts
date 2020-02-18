@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TellerComponent } from './teller/teller.component';
+import { AtmComponent } from './atm/atm.component';
+import { StartPageComponent } from './start-page/start-page.component';
+import { ContactComponent } from './contact/contact.component';
+
+import { BankService } from './service/bank.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TellerComponent,
+    AtmComponent,
+    StartPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BankService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
