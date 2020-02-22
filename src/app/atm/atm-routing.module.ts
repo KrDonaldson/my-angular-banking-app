@@ -10,7 +10,7 @@ import { TransactionsComponent }  from './transactions/transactions.component';
 import { TransferComponent }  from './transfer/transfer.component';
 import { WithdrawComponent }  from './withdraw/withdraw.component';
 
-const secondaryRoutes: Routes = [
+const atmRoutes: Routes = [
   { path: 'deposit',  component: DepositComponent },
   { path: 'fastcash', component: FastcashComponent },
   { path: 'main',  component: MainComponent },
@@ -22,10 +22,10 @@ const secondaryRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(secondaryRoutes)
+    RouterModule.forChild(atmRoutes)
   ],
   exports: [
     RouterModule
   ]
 })
-export class SecondaryRoutingModule { }
+export class AtmRoutingModule { }
