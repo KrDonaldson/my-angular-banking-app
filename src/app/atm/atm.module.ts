@@ -19,7 +19,7 @@ import { WithdrawComponent }  from './withdraw/withdraw.component';
     PinComponent,
     TransactionsComponent,
     TransferComponent,
-    WithdrawComponent
+    WithdrawComponent,
   ],
   imports: [
     CommonModule,
