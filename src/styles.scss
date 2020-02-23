@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-html{
+html {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background-color: #969696;
+    background-color: honeydew;
+}
+body{
+    padding: 10px;
+    border: 8px solid grey;
+    height: 700px;
+    background: beige;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
