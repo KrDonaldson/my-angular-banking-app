@@ -8,7 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StartPageComponent } from './start-page/start-page.component'
 
 const routes: Routes = [
-  { path: 'atm', component: AtmComponent },
+  { path: 'atm', loadChildren: () => import(`./atm/atm.module`).then(m => m.AtmModule) },
   { path: 'teller', component: TellerComponent},
   { path: 'contact', component: ContactComponent },
   { path: 'home', component: StartPageComponent },
