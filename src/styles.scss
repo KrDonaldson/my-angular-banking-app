@@ -8,10 +8,32 @@ html {
     background-color: honeydew;
 }
 body{
+    display: flex;
+    align-items: stretch;
     padding: 10px;
     border: 8px solid grey;
     height: 700px;
-    background: beige;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+app-root{
+    align-items: center;
+    align-items: stretch;
+    flex-grow: 1;
+}
+button.blue-gradient {
+    background-color: #4CAF50;
+    background-image: linear-gradient(to right, #00f260, #0575e6);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 80px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 50px 2px;
+    cursor: pointer;
+    align-content:center;
 }
