@@ -1,4 +1,25 @@
-<button routerLink="../deposit">Make a Deposit</button>
-<button routerLink="../withdraw">Withdraw Cash</button>
-<button routerLink="../transactions">View Recent Trasactions</button>
-<button routerLink="../transfer">Transfer Funds</button>
+<div>
+    <p> Hi accountFirstName, </p>
+    <p> What would you like to do? </p>
+</div>
+<div class="customerOptions">
+    <button class="button1" routerLink="../deposit">Make a Deposit</button>
+    <button class="button1" routerLink="../withdraw">Withdraw Cash</button>
+    <button class="button1" routerLink="../transactions">View Recent Trasactions</button>
+    <button class="button1" routerLink="../transfer">Transfer Funds</button>
+</div>
+<div class="quickWithdraw">
+    Quick Withdraw functionality Should go here.
+    <div class="quick-cash-buttons">
+    
+        <button class="button2" value="20">20</button>
+        <button class="button2" value="40">40</button>
+        <button class="button2" value="60">60</button>
+    
+        <button class="button2" value="80">80</button>
+        <button class="button2" value="100">100</button>
+        <button class="button2" value="200">200</button>
+    
+    </div>
+    <button (click) = "getFashCash()">Get Fash Cash</button>
+</div>
